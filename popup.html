@@ -1,0 +1,148 @@
+<!-- Qualification Popup Template - Next Flow AI -->
+<div id="lead-modal">
+    <div class="modal-content">
+        <div class="modal-header-info">
+            <span class="timer-tag"><i class="far fa-clock"></i> Leva menos de 20 segundos</span>
+            <button class="modal-close" aria-label="Fechar">&times;</button>
+        </div>
+        
+        <div class="progress-container">
+            <div class="progress-bar"></div>
+        </div>
+
+        <div class="modal-intro">
+            <p>Responda 6 perguntas rápidas para analisarmos se a automação faz sentido para sua empresa.</p>
+        </div>
+
+        <form id="qualification-form">
+            <!-- ETAPA 1: Empresa -->
+            <div class="form-step active" data-step="0">
+                <h2>Qual o nome da sua empresa?</h2>
+                <div class="input-group active">
+                    <label>Nome da empresa</label>
+                    <input type="text" id="nome-empresa" placeholder="Ex: Minha Empresa Ltda" required>
+                </div>
+            </div>
+
+            <!-- ETAPA 2: Presença Online -->
+            <div class="form-step" data-step="1">
+                <h2>Sua empresa possui presença online?</h2>
+                <div class="options-grid">
+                    <div class="option-item" data-field="presenca" data-value="Tenho site">
+                        <i></i> <span>Tenho site</span>
+                    </div>
+                    <div class="option-item" data-field="presenca" data-value="Tenho Instagram">
+                        <i></i> <span>Tenho Instagram</span>
+                    </div>
+                    <div class="option-item" data-field="presenca" data-value="Tenho site e Instagram">
+                        <i></i> <span>Tenho site e Instagram</span>
+                    </div>
+                    <div class="option-item" data-field="presenca" data-value="Apenas WhatsApp">
+                        <i></i> <span>Apenas WhatsApp</span>
+                    </div>
+                    <div class="option-item" data-field="presenca" data-value="Ainda não tenho presença online">
+                        <i></i> <span>Ainda não tenho presença online</span>
+                    </div>
+                </div>
+
+                <!-- Campos Condicionais -->
+                <div class="input-group" id="group-site">
+                    <label>URL do site</label>
+                    <input type="url" id="url-site" placeholder="https://empresa.com">
+                </div>
+                <div class="input-group" id="group-insta">
+                    <label>Instagram da empresa</label>
+                    <input type="text" id="user-insta" placeholder="@empresa">
+                </div>
+            </div>
+
+            <!-- ETAPA 3: Área de Interesse -->
+            <div class="form-step" data-step="2">
+                <h2>Qual dessas áreas você gostaria de automatizar primeiro?</h2>
+                <div class="options-grid">
+                    <div class="option-item" data-field="interesse" data-value="Atendimento no WhatsApp">
+                        <i></i> <span>Atendimento no WhatsApp</span>
+                    </div>
+                    <div class="option-item" data-field="interesse" data-value="Geração de leads">
+                        <i></i> <span>Geração de leads</span>
+                    </div>
+                    <div class="option-item" data-field="interesse" data-value="Funil automático de vendas">
+                        <i></i> <span>Funil automático de vendas</span>
+                    </div>
+                    <div class="option-item" data-field="interesse" data-value="Processos internos">
+                        <i></i> <span>Processos internos</span>
+                    </div>
+                    <div class="option-item" data-field="interesse" data-value="Financeiro / cobranças">
+                        <i></i> <span>Financeiro / cobranças</span>
+                    </div>
+                    <div class="option-item" data-field="interesse" data-value="Quero entender tudo primeiro">
+                        <i></i> <span>Quero entender tudo primeiro</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ETAPA 4: Volume -->
+            <div class="form-step" data-step="3">
+                <h2>Quantas mensagens ou contatos sua empresa recebe por mês?</h2>
+                <div class="options-grid">
+                    <div class="option-item" data-field="volume" data-value="Menos de 50">
+                        <i></i> <span>Menos de 50</span>
+                    </div>
+                    <div class="option-item" data-field="volume" data-value="50 – 200">
+                        <i></i> <span>50 – 200</span>
+                    </div>
+                    <div class="option-item" data-field="volume" data-value="200 – 1000">
+                        <i></i> <span>200 – 1000</span>
+                    </div>
+                    <div class="option-item" data-field="volume" data-value="Mais de 1000">
+                        <i></i> <span>Mais de 1000</span>
+                    </div>
+                </div>
+                <p class="micro-text">Isso nos ajuda a entender o potencial de automação da sua empresa.</p>
+            </div>
+
+            <!-- ETAPA 5: Uso de Automação -->
+            <div class="form-step" data-step="4">
+                <h2>Você já utiliza alguma automação hoje?</h2>
+                <div class="options-grid">
+                    <div class="option-item" data-field="nivel" data-value="Não uso automação">
+                        <i></i> <span>Não uso automação</span>
+                    </div>
+                    <div class="option-item" data-field="nivel" data-value="Uso algo simples">
+                        <i></i> <span>Uso algo simples</span>
+                    </div>
+                    <div class="option-item" data-field="nivel" data-value="Já uso automações mais avançadas">
+                        <i></i> <span>Já uso automações mais avançadas</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ETAPA 6: Email -->
+            <div class="form-step" data-step="5">
+                <h2>Qual email você mais utiliza para contato?</h2>
+                <div class="input-group active">
+                    <label>Email de contato</label>
+                    <input type="email" id="email-contato" placeholder="seu@email.com" required>
+                </div>
+                <p class="micro-text">Usamos apenas para enviar informações da análise da sua automação.</p>
+            </div>
+
+            <!-- ETAPA FINAL -->
+            <div class="form-step" data-step="6">
+                <h2>Perfeito. Agora vamos analisar rapidamente seu caso.</h2>
+                <p>Nossa equipe vai entender melhor sua operação e mostrar como a automação pode ser aplicada na sua empresa.</p>
+                <div class="final-success-icon">
+                    <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#ff5722" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                        <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                    </svg>
+                </div>
+            </div>
+        </form>
+
+        <div class="modal-footer">
+            <button class="btn-modal btn-prev">Voltar</button>
+            <button class="btn-modal btn-next" disabled>Próximo Passo</button>
+        </div>
+    </div>
+</div>
