@@ -24,6 +24,30 @@ body {
     /* use clip instead of hidden so child elements can still scroll internally */
 }
 
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0f0f0f;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary-orange);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-orange-hover);
+}
+
+/* Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: var(--primary-orange) #0f0f0f;
+}
+
 /* Animations */
 @keyframes fadeIn {
     from {
@@ -128,6 +152,12 @@ nav a:hover {
     background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.75)), url('../Assets/imagem-hero.png');
     background-size: cover;
     background-position: center;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.75)), url('../Assets/imagem-hero-mobile-4-melhor.png');
+    }
 }
 
 .hero-content {
