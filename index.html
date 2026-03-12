@@ -20,19 +20,23 @@
     <title>Next Flow AI - Sistemas e Automação Inteligente</title>
 
     <!-- Preload Critical Assets -->
-    <link rel="preload" href="Assets/imagem-hero.png" as="image">
+    <link rel="preload" href="Assets/favicon.png" as="image">
+    <link rel="preload" href="Assets/imagem-hero.png" as="image" media="(min-width: 769px)" fetchpriority="high">
+    <link rel="preload" href="Assets/imagem-hero-mobile-4-melhor.png" as="image" media="(max-width: 768px)" fetchpriority="high">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="Assets/favicon.png">
     <link rel="apple-touch-icon" href="Assets/favicon.png">
 
     <!-- CSS Links -->
     <link rel="stylesheet" href="CSS/style.css">
-    <link rel="stylesheet" href="CSS/popup.css">
+    <link rel="stylesheet" href="CSS/popup.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="CSS/popup.css"></noscript>
 </head>
 
 <body>
@@ -148,7 +152,7 @@
             <div class="problem-container">
                 <div class="problem-image-column animate-on-scroll">
                     <img src="Assets/imagem-secao-2.png" alt="O Problema - Processos desorganizados custando vendas"
-                        class="problem-img" loading="lazy">
+                        class="problem-img" loading="lazy" width="600" height="450">
                 </div>
                 <div class="problem-text-column animate-on-scroll">
                     <span class="section-tag">O PROBLEMA</span>
@@ -244,7 +248,7 @@
                 <div class="solution-image-column animate-on-scroll">
                     <img src="Assets/solucao-automacao.png"
                         alt="Automação Inteligente e Qualificação de Leads - Next Flow Ai" class="solution-img"
-                        loading="lazy">
+                        loading="lazy" width="600" height="450">
                 </div>
             </div>
         </section>
@@ -551,7 +555,7 @@
         <section id="authority" class="authority-section">
             <div class="authority-card animate-on-scroll">
                 <div class="authority-image">
-                    <img src="Assets/imagem-hero-mobile-4-melhor.png" alt="Russo - Next Flow AI" loading="lazy">
+                    <img src="Assets/imagem-hero-mobile-4-melhor.png" alt="Russo - Next Flow AI" loading="lazy" width="400" height="400">
                 </div>
                 <div class="authority-content">
                     <span class="authority-tag">QUEM FAZ ACONTECER</span>
@@ -609,7 +613,7 @@
                         <!-- Depoimento 1 -->
                         <div class="testimonial-card">
                             <div class="card-header">
-                                <img src="Assets/client-avatar-1.png" alt="Carlos Mendes" class="client-photo">
+                                <img src="Assets/client-avatar-1.png" alt="Carlos Mendes" class="client-photo" loading="lazy" width="60" height="60">
                                 <div class="client-info">
                                     <div class="rating">
                                         <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
@@ -628,7 +632,7 @@
                         <!-- Depoimento 2 -->
                         <div class="testimonial-card">
                             <div class="card-header">
-                                <img src="Assets/client-avatar-2.png" alt="Ana Paula" class="client-photo">
+                                <img src="Assets/client-avatar-2.png" alt="Ana Paula" class="client-photo" loading="lazy" width="60" height="60">
                                 <div class="client-info">
                                     <div class="rating">
                                         <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
@@ -647,7 +651,7 @@
                         <!-- Depoimento 3 -->
                         <div class="testimonial-card">
                             <div class="card-header">
-                                <img src="Assets/client-avatar-3.png" alt="Ricardo Silva" class="client-photo">
+                                <img src="Assets/client-avatar-3.png" alt="Ricardo Silva" class="client-photo" loading="lazy" width="60" height="60">
                                 <div class="client-info">
                                     <div class="rating">
                                         <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
@@ -665,7 +669,7 @@
                         <!-- Depoimento 4 -->
                         <div class="testimonial-card">
                             <div class="card-header">
-                                <img src="Assets/client-avatar-4.png" alt="Juliana Costa" class="client-photo">
+                                <img src="Assets/client-avatar-4.png" alt="Juliana Costa" class="client-photo" loading="lazy" width="60" height="60">
                                 <div class="client-info">
                                     <div class="rating">
                                         <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
@@ -684,7 +688,7 @@
                         <!-- Depoimento 5 -->
                         <div class="testimonial-card">
                             <div class="card-header">
-                                <img src="Assets/client-avatar-5.png" alt="Roberto Almada" class="client-photo">
+                                <img src="Assets/client-avatar-5.png" alt="Roberto Almada" class="client-photo" loading="lazy" width="60" height="60">
                                 <div class="client-info">
                                     <div class="rating">
                                         <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
@@ -702,7 +706,7 @@
                         <!-- Depoimento 6 -->
                         <div class="testimonial-card">
                             <div class="card-header">
-                                <img src="Assets/client-avatar-6.png" alt="Fernanda Lima" class="client-photo">
+                                <img src="Assets/client-avatar-6.png" alt="Fernanda Lima" class="client-photo" loading="lazy" width="60" height="60">
                                 <div class="client-info">
                                     <div class="rating">
                                         <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
